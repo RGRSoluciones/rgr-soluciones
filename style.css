@@ -112,22 +112,18 @@ nav a:hover {
   padding: 30px;
   width: 220px;
   border-radius: 12px;
-  transition: 
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border 0.3s ease;
-  cursor: pointer;
-}
 
-
-  /* CONTORNO AZUL PUNTEADO */
+  /* CONTORNO */
   border: 2px dashed #38bdf8;
 
   /* INTERACCIÓN */
   cursor: pointer;
-  transition: all 0.4s ease;
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border 0.3s ease;
 
-  /* PARA ANIMACIÓN DE SCROLL */
+  /* ANIMACIÓN SCROLL */
   opacity: 0;
   transform: translateY(30px);
 }
@@ -285,4 +281,5 @@ footer {
     transform: translateY(0);
   }
 }
+
 
