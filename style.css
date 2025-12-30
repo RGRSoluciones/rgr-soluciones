@@ -282,4 +282,40 @@ footer {
   }
 }
 
+/* =========================
+   IDENTIDAD LATERAL (BRANDING)
+   ========================= */
+
+.side-glow {
+  position: fixed;
+  top: 0;
+  width: 160px;
+  height: 100vh;
+  z-index: -1;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(56, 189, 248, 0.35),
+    rgba(56, 189, 248, 0.08),
+    rgba(56, 189, 248, 0.35)
+  );
+
+  filter: blur(40px);
+}
+
+.side-glow.left {
+  left: -80px;
+}
+
+.side-glow.right {
+  right: -80px;
+}
+
+/* Ocultar en mobile */
+@media (max-width: 768px) {
+  .side-glow {
+    display: none;
+  }
+}
+
 
