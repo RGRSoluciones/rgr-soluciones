@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>RGR Soluciones | Reparación de PC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>RGR Soluciones</h1>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Reparación y mantenimiento de PC</h2>
+  <p>Soluciones rápidas, claras y profesionales en Río Gallegos.</p>
+  <button onclick="abrirWhatsapp()">Contactar por WhatsApp</button>
+</section>
+
+<section class="servicios" id="servicios">
+  <h2>Servicios</h2>
+
+  <div class="cards">
+    <div class="card" onclick="whatsappServicio('Reparación de PC')">
+      <h3>Reparación de PC</h3>
+      <p>Diagnóstico y solución de fallas.</p>
+    </div>
+
+    <div class="card" onclick="whatsappServicio('Limpieza de PC')">
+      <h3>Limpieza</h3>
+      <p>Mantenimiento y cambio de pasta térmica.</p>
+    </div>
+
+    <div class="card presupuesto" onclick="whatsappPresupuesto()">
+      <h3>Solicitar presupuesto</h3>
+      <p>Armado de PC + instalación.</p>
+    </div>
+  </div>
+</section>
+
+<section class="como-trabajo">
+  <h2>¿Cómo trabajo?</h2>
+
+  <div class="pasos">
+    <div class="paso">
+      <strong>1️⃣ Contacto</strong>
+      <p>Me escribís por WhatsApp y me contás el problema.</p>
+    </div>
+
+    <div class="paso">
+      <strong>2️⃣ Diagnóstico</strong>
+      <p>Analizo el equipo y te explico la solución.</p>
+    </div>
+
+    <div class="paso">
+      <strong>3️⃣ Reparación</strong>
+      <p>Trabajo con cuidado y componentes confiables.</p>
+    </div>
+
+    <div class="paso">
+      <strong>4️⃣ Entrega</strong>
+      <p>Probamos el equipo y queda listo para usar.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="contacto" id="contacto">
+  <h2>Contacto</h2>
+  <button onclick="abrirWhatsapp()">Escribirme</button>
+</section>
+
+<a class="whatsapp-float" onclick="abrirWhatsapp()">💬</a>
+
+<footer>
+  <p>© 2025 RGR Soluciones</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
